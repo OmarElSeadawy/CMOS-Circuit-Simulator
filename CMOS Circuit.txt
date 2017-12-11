@@ -1,0 +1,23 @@
+Inverters Used : 
+MinvA1 A_inv A VDD VDD PMOS
+MinvA2 A_inv A GND GND NMOS
+MinvB1 B_inv B VDD VDD PMOS
+MinvB2 B_inv B GND GND NMOS
+MinvC1 C_inv C VDD VDD PMOS
+MinvC2 C_inv C GND GND NMOS
+MinvD1 D_inv D VDD VDD PMOS
+MinvD2 D_inv D GND GND NMOS
+MinvE1 E_inv E VDD VDD PMOS
+MinvE2 E_inv E GND GND NMOS
+Pull Up Network : 
+M1 Out A_inv VDD VDD PMOS
+M2 Node1 B_inv VDD VDD PMOS
+M3 Out C_inv Node1 Node1 PMOS
+M4 Node2 D_inv Node1 Node1 PMOS
+M5 Out E_inv Node2 Node2 PMOS
+Pull Down Network : 
+M6 Out A_inv Node3 Node3 NMOS
+M7 Node3 B_inv GND GND NMOS
+M8 Node3 C_inv Node4 Node4 NMOS
+M9 Node4 D_inv GND GND NMOS
+M10 Node4 E_inv GND GND NMOS
